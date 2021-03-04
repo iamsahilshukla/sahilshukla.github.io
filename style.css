@@ -1,0 +1,497 @@
+body {
+    margin: 0px;
+    font-family: 'Yeon Sung', cursive;
+}
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+#Body-header {
+    height: 66vh;
+    opacity: 0.8;
+    background-image: url(image/macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.horizontal_list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal_list li {
+    display: inline;
+    margin: 0px 8px 8px 0px;
+}
+
+.horizontal_list a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 14px;
+}
+
+.horizontal_list li a:hover {
+    color: rgb(218, 187, 187);
+    border-bottom: 1px solid white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#name-social-container {
+    height: 20vh;
+}
+
+#my-name {
+    color: white;
+    font-size: 3rem;
+    font-weight: 80;
+    margin-bottom: 0px;
+}
+
+
+/* .social-icons{
+ 
+} */
+
+.social-icons li a i {
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 4px 2px rgba(230, 196, 196, 0.3);
+}
+
+.social-icons {
+    list-style: none;
+    width: 1rem;
+    padding: 0px;
+    display: inline;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n) {
+    background-color: lightgrey;
+}
+
+section:nth-child(2n+1) {
+    background-color: white;
+}
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+    position: relative;
+}
+
+#my-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#my-image img:hover {
+    box-shadow: 0px 0px 4px 5px color red;
+}
+
+.about-me {
+    width: 500px;
+    margin: auto;
+    padding-top: 33px;
+    margin-bottom: 27px;
+}
+
+#skills h1 {
+    font-family: sans-serif;
+    color: blue;
+}
+
+.skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+/* Skills background colors */
+
+.mb-blue {
+    background-color: blue;
+}
+
+.mb-yellow {
+    background-color: yellow;
+}
+
+.mb-orange {
+    background-color: orange;
+}
+
+.mb-violet {
+    background-color: violet;
+}
+
+.mb-red {
+    background-color: red;
+}
+
+.skill-progress {
+    width: 11rem;
+    height: 2.0rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.skill-progress>div {
+    border-radius: 20px 0px 0px 20px;
+}
+
+
+/* percentage classes */
+
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.sixty-percent {
+    width: 60%;
+    height: inherit;
+}
+
+.seventy-percent {
+    width: 70%;
+    height: inherit;
+}
+
+.seventy-five-percent {
+    width: 75%;
+    height: inherit;
+}
+
+.eighty-percent {
+    width: 70%;
+    height: inherit;
+}
+
+
+/* Portfolio Section */
+
+#Portfolio h1 {
+    font-family: sans-serif;
+    color: blue;
+}
+
+#Portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.Portfolio-image {
+    max-width: 350px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.Portfolio-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.Portfolio-description {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.Portfolio-description p {
+    color: white;
+}
+
+.Portfolio-image:hover {
+    box-shadow: 0 0 20px #3a677c;
+}
+
+.Portfolio-image:hover .Portfolio-description {
+    background-color: #1a191978;
+    color: white;
+}
+
+/* Contact */
+
+#Contact h1{
+    font-family: sans-serif;
+    color:white;
+    margin: 3%;
+}
+
+#Contact{
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 84%);
+    color: white;
+    padding-bottom: 40px;
+}
+#contact-form{
+    margin-left: 20%;
+}
+.Contact-container{
+        display:flex;
+}
+.my-details-container{
+width: 50%;
+margin-left: 2%;
+}
+.my-details-container h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+.my-details-container p{
+    color:rgb(238, 207, 207);
+    font-size: 0.9rem;
+    
+}
+    
+.my-details-info {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+
+}
+.my-details-info span{
+    margin-left:15px;
+}
+.my-details-info i {
+    color: white;
+}
+.Contact-form-container{
+    width:50%;
+}
+
+#contact-form input,textarea{
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    overflow-wrap: break-word;
+}
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 4px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+}
+
+#Contact .social-icons li a i {
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+
+/* Work Experiance */
+
+#Experiance h1{
+    font-size: 2rem;
+    color: blue;
+    font-family: sans-serif;
+}
+
+.timeline{
+    position: relative;
+    width: 75%;
+    /* border:2px solid black; */
+}
+.timeline-box{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left:5%;
+    min-height: 150px;
+    /* border:2px solid black; */
+    text-align:right;
+}
+.timeline-container{
+    padding:8px;
+}
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+.timeline-box h1{
+    position: relative;
+    color:rgb(166, 155, 177);
+    left:80%;
+}
+.timeline-box h1::before{
+    content:'';
+    display: inline-block;
+    background-image: url("image/download\ \(1\).png");
+    height:20px;
+    width:20px;
+    background-size: contain;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+.timeline-divider{   
+    position: absolute;
+    width: 0;
+    top: 5%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
+    height: 78%;
+    color: #433E3F;
+}
+@media screen and (max-width:600px){
+    .timeline-divider{
+        top:4%;
+        left:3%;
+    }
+    .timeline-box{
+        left:7%  !important;
+        width:89%;
+    }
+   html{
+       font-size: 0.8rem;
+   }
+}
+.timeline-travellar{
+    position:sticky;
+    color:blue;
+    font-size: 1.5rem;
+    top:25%;
+    transform: rotate(90deg);
+    z-index: 2;
+    
+}
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(143, 77, 77);
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n+1)::after {
+    right: -12.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -10.3%;
+}
+
+.timeline-logo{
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+.timeline-logo>img{
+    width:100%;
+}
+.experiance-designation{
+    color: rgb(86, 86, 228);
+    font-size: 1.4rem;
+    margin:2px;
+}
+.company-name{
+    /* font-size:1rem;
+    position: relative;
+    left:72%; */
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.experiance-date{
+    margin:2px;
+    font-weight: 100;
+    color: rgb(5, 4, 4);
+    font-size: 1rem;
+}
+.experiance-details{
+    margin:2px 0px 12px 1px;
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+    text-align:justify;
+}
